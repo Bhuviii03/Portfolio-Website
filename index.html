@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bhuvi Singh — Portfolio</title>
+  <meta name="description" content="Bhuvi Singh — Software Engineer & UI/UX Designer | Portfolio" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bubbles" id="bubbles"></div>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo">BS</div>
+          <div>
+            <div style="font-weight:700">Bhuvi Singh</div>
+            <div style="font-size:12px;color:var(--muted)">Web Developer • UI/UX Designer</div>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact" class="cta">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero fade-in-up">
+      <div class="intro">
+        <span class="badge">IIT (ISM) Dhanbad • Pre-final Year</span>
+        <h1>Hi — I'm <span style="color:var(--accent)">Bhuvi Singh</span></h1>
+        <div class="role muted"> Web Developer & UI/UX enthusiast</div>
+        <p>I design delightful user experiences and build full-stack applications. I enjoy combining product thinking with engineering to ship polished, usable products — from prototypes to production.</p>
+        <div class="actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn btn-outline" href="Resume__off_.pdf" target="_blank">Download Resume</a>
+        </div>
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">Available for internships & collaborations • Open to product-focused engineering roles</div>
+      </div>
+
+      <aside class="profile-card fade-in-up" style="animation-delay:.08s">
+        <img src="profile.png" alt="Bhuvi Singh" />
+        <div class="profile-meta">
+          <div class="meta-name">Bhuvi Singh</div>
+          <div class="meta-role muted">Web Developer • UI/UX Designer</div>
+          <div class="links">
+            <a class="pill" href="https://www.linkedin.com/in/bhuvi-singh-623248255" target="_blank">LinkedIn</a>
+            <a class="pill" href="https://github.com/Bhuviii03" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="fade-in-up">
+      <h2>About</h2>
+      <div class="grid">
+        <div class="card">
+          <p class="muted">I’m Bhuvi Singh, an enthusiastic engineer and creative designer from IIT (ISM) Dhanbad. I specialize in crafting intuitive UI/UX designs, full-stack web development, and smart product solutions. My passion lies in bridging technology and user experience by building intelligent AI-powered applications alongside beautiful, user-centric interfaces. With a strong foundation in coding and a keen eye for design, I strive to create impactful digital solutions that are simple, elegant, and engaging. Welcome to my portfolio, where technology meets creativit</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0;font-size:15px">Experience</h3>
+          <div style="font-weight:700">ServiceNow — Associate Software Engineer</div>
+          <div class="muted" style="margin-top:6px">May 2025 - Jul 2025 • Hyderabad</div>
+          <p class="muted" style="margin-top:8px">Built intelligent virtual agents, integrated REST tools and Knowledge Base retrieval, and worked on a smart integration recommendation agent using knowledge graphs and RAG.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in-up">
+      <h2>Projects</h2>
+      <div class="projects">
+        <!-- Project 1 -->
+        <div class="project card" data-project="NoteZipper" onclick="openProjectModal('NoteZipper')">
+          <div class="thumb" aria-hidden><img src="notezipper.png" alt="NoteZipper" /></div>
+          <div class="title">NoteZipper</div>
+          <div class="meta">MERN • React • Node • MongoDB</div>
+          <div class="muted" style="margin-top:6px;font-size:13px">Color-first note-taking website for quick creation, editing and categorization.</div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project card" data-project="RescuWave" onclick="openProjectModal('RescuWave')">
+          <div class="thumb" aria-hidden><img src="rescuwave.png" alt="NRescuWave" /></div>
+          <div class="title">RescuWave</div>
+          <div class="meta">Android • Firebase • Google Places API</div>
+          <div class="muted" style="margin-top:6px;font-size:13px">Location-based emergency response app with real-time handling & nearby agency lookup.</div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project card" data-project="BlogTown" onclick="openProjectModal('BlogTown')">
+          <div class="thumb" aria-hidden><img src="blogtown.png" alt="Blog Town" /></div>
+          <div class="title">Blog Town</div>
+          <div class="meta">HTML • CSS • JavaScript</div>
+          <div class="muted" style="margin-top:6px;font-size:13px">Personal blog focused on tech, self-improvement and news — responsive & accessible.</div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project card" data-project="Hotel Booking App and Website" onclick="openProjectModal('HotelBooking')">
+          <div class="thumb" aria-hidden><img src="hotelbookingapp.png" alt="Hotel Booking App" /></div>
+          <div class="title">Hotel Booking App and Website</div>
+          <div class="meta">UI Design • UX Research • Figma • Wireframe</div>
+          <div class="muted" style="margin-top:6px;font-size:13px">A seamless hotel booking app and website with intuitive navigation, virtual tours, and secure payment features for a delightful user experience</div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project card" data-project="Cloud Game Community App and Website" onclick="openProjectModal('CloudGame')">
+          <div class="thumb" aria-hidden><img src="cloudgame.png" alt="Cloud" /></div>
+          <div class="title">Cloud Game Community App and Website</div>
+          <div class="meta">UI Design • UX Research • Figma • Wireframe</div>
+          <div class="muted" style="margin-top:6px;font-size:13px">An interactive cloud game community platform with real-time chat, streaming, and social gamer features.</div>
+        </div>
+
+
+      </div>
+    </section>
+
+     <section id="skills" class="fade-in-up">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card" style="font-weight:700">Technical Skills
+          <ul class="muted">
+            <li>Programming Languages: C++, Python, JavaScript, SQL</li>
+            <li>Web Development: React, Node.js, Express.js, HTML, CSS</li>
+            <li>Frameworks & Tools: Excel, Tableau, ServiceNow AI Agent Studio, GlideRecord, Flow Designer, Knowledge Graph</li>
+            <li>Databases: MongoDB</li>
+            <li>Others: REST APIs, RAG</li>
+          </ul>
+        </div>
+        <div class="card" style="font-weight:700">Design & Product Skills
+        <ul class="muted">
+            <li>UI/UX Design: Figma, UX Research, Wireframing, Prototyping and Usability Testing</li>
+            <li>Visual Design: Adobe Photoshop, Canva, Illustrator</li>
+            <li>Product Management:  Product Lifecycle
+ Management, Product Analytics, Integration Design, Guesstimate.</li>
+            <li>Soft Skills: Critical Thinking, Team Management, Leadership, Communication, User Empathy, Cross-functional
+ Collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="fade-in-up">
+      <h2>Achievements & Activities</h2>
+      <div class="grid">
+        <div class="card" style="font-weight:700">Achievements
+          <ul class="muted">
+            <li>Solved 500+ problems on competitive platforms</li>
+            <li>Got Selected as an Open Source Contributer for GSSOC 2025</li>
+            <li>Secured 4th position as a team in an IoT workshop held in NVCTI, IIT(ISM) Dhanbad</li>
+            <li>Team selected for Smart India Hackathon 2023</li>
+            <li>City Topper in Class 12, 11th Rank in UP boards</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div style="font-weight:700">Social Engagements</div>
+          <div class="muted" style="margin-top:8px">UI/UX Designer — Cyberlabs | Club: FotoFreaks |  Organisor: Srijan’24 (Biggest Socio Cultural Fest of Eastern India), Khanan’23 (Geo-Mining fest) | Volunteer: Concetto’23, Srijan’24</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in-up">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="card">
+          <div style="font-weight:700">Get in touch</div>
+          <p class="muted">Email: <a href="mailto:sbhuvi303@gmail.com">sbhuvi303@gmail.com</a></p>
+          <p class="muted">Open to internships, collaborations, and freelance UI/UX work.</p>
+          <div style="margin-top:10px">
+            <a class="pill" href="mailto:sbhuvi303@gmail.com">Email me</a>
+            <a class="pill" href="https://www.linkedin.com/in/bhuvi-singh-623248255" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <div class="card">
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — message sent (demo).');">
+            <input placeholder="Your name" required />
+            <input placeholder="Your email" type="email" required />
+            <textarea placeholder="Message" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-glow" aria-hidden></div>
+    <div class="footer-inner container">Made with ❤️ • Built by Bhuvi Singh — <a href="Resume__off_.pdf" target="_blank">Resume</a></div>
+  </footer>
+
+  <!-- Modal (centered) -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden>
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div class="modal-title" id="modalTitle">Project</div>
+        <button class="close-btn" aria-label="Close" onclick="closeProjectModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-thumb" id="modalThumb">
+          <!-- image inserted by JS -->
+        </div>
+        <div>
+          <div class="modal-desc" id="modalDesc">Description</div>
+          <div class="modal-links" id="modalLinks"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
